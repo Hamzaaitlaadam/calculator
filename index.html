@@ -9,7 +9,7 @@
 </head>
 <body>
   <main class="calculator">
-    <div id="display" aria-live="polite"></div>
+    <div id="display" aria-live="polite">0</div>
 
     <div class="keys">
       <button class="btn btn-clear" data-action="clear">Clear</button>
@@ -33,10 +33,11 @@
       <button class="btn btn-equals" data-action="equals">=</button>
 
       <button class="btn btn-zero" data-digit="0">0</button>
-      <button class="btn" disabled data-action="decimal">.</button>
+      <button class="btn" data-action="decimal">.</button>
     </div>
   </main>
 
+  <script src="operations.js"></script>
   <script src="calculator.js"></script>
 </body>
 </html>
