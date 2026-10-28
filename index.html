@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <div id="display" aria-live="polite">0</div>
+
+    <div class="keys">
+      <button class="btn btn-clear" data-action="clear">Clear</button>
+      <button class="btn btn-clear" data-action="backspace">&#9003;</button>
+      <button class="btn btn-operator" data-operator="/">&divide;</button>
+      <button class="btn btn-operator" data-operator="*">&times;</button>
+
+      <button class="btn" data-digit="7">7</button>
+      <button class="btn" data-digit="8">8</button>
+      <button class="btn" data-digit="9">9</button>
+      <button class="btn btn-operator" data-operator="-">&minus;</button>
+
+      <button class="btn" data-digit="4">4</button>
+      <button class="btn" data-digit="5">5</button>
+      <button class="btn" data-digit="6">6</button>
+      <button class="btn btn-operator" data-operator="+">+</button>
+
+      <button class="btn" data-digit="1">1</button>
+      <button class="btn" data-digit="2">2</button>
+      <button class="btn" data-digit="3">3</button>
+      <button class="btn btn-equals" data-action="equals">=</button>
+
+      <button class="btn btn-zero" data-digit="0">0</button>
+      <button class="btn" data-action="decimal">.</button>
+    </div>
+  </main>
+
+  <script src="operations.js"></script>
+  <script src="calculator.js"></script>
+</body>
+</html>
