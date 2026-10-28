@@ -145,3 +145,22 @@ data_action.forEach((button)=>{
         handlerAction(action);
     })
 })
+
+document.addEventListener("keydown", (event) => {
+    const key = event.key;
+    if(key >= "0" && key <= "9"){
+        getInput(key);
+    }else if(["+","-","*","/"].includes(key)){
+        event.preventDefault();
+        handleOpertor(key);
+    }else if(key === "." || key === ","){
+        handlerAction("decimal");
+    }else if(key === "Enter" || key === "="){
+        event.preventDefault();
+        handlerAction("equals");
+    }else if(key === "Backspace"){
+        handlerAction("backspace");
+    }else if(key === "Escape" || key === "Delete"){
+        handlerAction("clear");
+    }
+});
